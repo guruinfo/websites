@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Length</title>
+        <style>
+            #a1{
+                width: 150px;
+                height: 40px;
+                color: red;
+                
+            }
+            #demo{
+                width: 100px;
+                color: blue;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <input type="text" id="a1">
+        <p id="demo"></p>
+        <button onclick="hello()">submit</button>
+    </body>
+<script>
+    function hello()
+    {
+        
+        
+        let text=document.getElementById("a1").value;
+        b="Hello"+"&nbsp"+text+"&nbsp"+"Have a nice day!";
+        document.write(b);
+    }
+</script>
+</html>

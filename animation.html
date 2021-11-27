@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>hello</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			.a{
+				width: 500px;
+				height:500px;
+				position: relative;
+				background-color: pink;
+			}
+			.b{
+				width:100px;
+				height: 100px;
+				animation-name: frame;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				position: absolute;
+				background-color: cyan;
+
+			}
+			@keyframes frame{
+				0%{
+					left: 0;
+					top:0;
+				}
+				15%{
+					left:80%;
+					top: 0;
+				}
+				30%{
+					left: 0;
+					top: 80%;
+				}
+				45%{
+					left: 0;
+					top: 0;
+				}
+				60%{
+					left: 80%;
+					top:80%;
+				}
+				75%{
+					left:0;
+					top: 80%
+				}
+				90%{
+					left: 0;
+					top: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="b">
+			</div>
+		</div>
+	</body>
+</html>

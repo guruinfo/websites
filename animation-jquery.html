@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Animation-jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <button>click me</button>
+        <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    </body>
+    <script>
+        
+       $(document).ready(function(){
+            $('button').click(function(){
+                $("div").animate({left: '400px',top:'0px'});
+                $("div").animate({top: '400px',right:'0px'});
+                $("div").animate({right: '400px',left:'0px'});
+                $("div").animate({bottom: '400px',top:'0px'});
+            });
+        });
+    </script>
+</html>

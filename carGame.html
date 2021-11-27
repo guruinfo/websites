@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background-color: burlywood;
+    float: left;
+}
+.mydiv{
+    width: 600px;
+    height: 650px;
+    background-color: rgb(19, 24, 24);
+    display: flex;
+    margin: 0 auto;
+    position:relative ;
+}
+ .box1{
+   background: repeating-linear-gradient(to bottom,
+   red 20%,
+   blue 80%);
+     width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:20px ;
+     position: absolute;
+     
+     animation-name: example;
+  animation-duration: 0.3s;
+  /* animation-fill-mode: forwards; */
+  animation-iteration-count: infinite;
+  /* animation-direction:normal; */
+  animation-timing-function: linear;
+  /* transition: 2s linear; */
+  }
+ @keyframes example {
+    from {top: 0px;}
+  to {top: 500px;}
+} 
+ /* .box2{  */
+     /* width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:140px ;
+     position: absolute;
+     z-index: 1; 
+ animation-name: example2;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: normal; */
+  /* animation-timing-function: linear; */
+  /* transition: 2s linear; */
+ /* } 
+ @keyframes example2 {
+    from {top: 0px;}
+  to {top: 290px;}
+} 
+ .box3{
+     width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:270px ;
+     position: absolute;
+     z-index: 1;
+     animation-name: example3;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear; */
+  /* transition: 2s linear; */
+ /* } 
+ @keyframes example3 {
+    from {top: 0px;}
+  to {top: 290px;}
+} 
+ .box4{
+     width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:400px ;
+     position: absolute;
+     z-index: 1;
+     animation-name: example4;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear; */
+  /* transition: 2s linear; */
+ /* } 
+ @keyframes example4 {
+    from {top: 0px;}
+  to {top: 290px;}
+} 
+ .box5{
+     width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:530px ;
+     position: absolute;
+     z-index: 1;
+     animation-name: example5;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: normal; */
+  /* animation-timing-function: linear; */
+  /* transition: 2s linear; */
+ /* } 
+ @keyframes example5 {
+    from {top: 0px;}
+  to {top: 290px;}
+} 
+.box6{
+     width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:630px ;
+     position: absolute;
+     animation-name: example6;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+ } 
+ @keyframes example6 {
+    from {top: 0px;} */
+  /* to {top: 290px;}
+} 
+.box7{
+     width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:730px ;
+     position: absolute;
+     animation-name: example7;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+ } 
+ @keyframes example7 {
+    from {top: 0px;}
+  to {top: 290px;}
+}  */
+/* .box8{
+     width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:830px ;
+     position: absolute;
+     animation-name: example8;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+ } 
+ @keyframes example8 {
+    from {top: 0px;}
+  to {top: 290px;}
+} 
+.box9{
+     width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:930px ;
+     position: absolute;
+     animation-name: example9;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+ } 
+ @keyframes example9 {
+    from {top: 0px;}
+  to {top: 290px;}
+} 
+.box10{ */
+     /* width: 20px;
+     height: 100px;
+     background-color: white;
+     margin-left: 290px;
+     margin-top:1030px ;
+     position: absolute;
+     animation-name: example10;
+  animation-duration: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: 2; */
+  /* animation-direction: alternate; */
+  /* animation-timing-function: linear; */
+ /* } 
+ @keyframes example10 {
+    from {top: 0px;}
+  to {top: 290px;}
+}  */
+
+ #c1{
+     width: 100px;
+     height: 100px;
+     margin-top: 500px;
+     margin-left: 80px;
+     position: absolute;
+     animation-name: car;
+     animation-duration: 2s;
+     /* animation-fill-mode: forwards; */
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+ } 
+ @keyframes car {
+    from {bottom: 0px;}
+  to {bottom: 400px;}
+} 
+
+
+</style>
+<body>
+    <div class="container">
+    <div class="mydiv">
+        <div class="box1"></div>
+        <!-- <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div> -->
+        <!-- <div class="box6"></div> -->
+        <img id="c1"src="car.png">
+       
+    </div>
+    
+    </div>
+</body>
+<!-- <script> -->
+    <!-- // $(document).ready(function(){
+    //     $('.box1').css({
+    //         animationname:'example',
+    //         animationduration: '2s',
+    //         animationiterationcount: 'infinite'
+    //     });
+    // });  -->
+<!-- </script> -->
+</html>

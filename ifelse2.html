@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a1">
+    <input type="text" id="b1">
+    <input type="text" id="c1">
+    <button onclick="hello()">submit</button>
+</body>
+
+
+<script>
+function hello()
+{
+    var a=document.getElementById("a1").value;
+    var b=document.getElementById("b1").value;
+    var c=document.getElementById("c1").value;
+    if(a>b)
+    {
+        if(a>c)
+        {
+        document.write("a is greater");
+        }
+        else
+        {
+            document.write("c is greater");
+        }
+    }
+    else
+    { 
+        if(b>c)
+        {
+        document.write("b is greater");
+        }
+        else
+        {
+        document.write("c is greater ");
+        }
+    }
+      
+}
+</script>
+</html>

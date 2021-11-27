@@ -1,0 +1,355 @@
+<html>
+<head>
+	<title>calculator</title>
+	</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container{
+			width: 100%;
+			height: 100vh;
+			background-color: pink;
+			float: left;
+		}
+		
+		.div2{
+			width: 414px;
+			height: 420px;
+			background-color: black;
+			float: left;
+			margin-left:28px ;
+			margin-top: 12px;
+			border: 2px solid grey;
+		}
+		
+		.div2 input[type="button"]
+         {
+         background-color:grey;
+         color: black;
+         margin-left: 1px;
+         width:100px;
+         border-radius: 17px;
+         height: 60px;
+         font-size: 20px;
+         }
+  
+        .div2 input[type="text"]
+         {
+         background-color:white;
+         height: 62px;
+         width:72%;
+         font-size: 26px;
+         margin-left: 1px;
+         border-radius: 19px;
+         }
+         #back{
+         	background-color: grey;
+         	height: 62px;
+         	width: 79px;
+         	border-radius: 17px;
+         	color: black;
+         	margin-left: -84px;
+         }
+         #clear{
+         	background-color: grey;
+         	color: black;
+         	width: 100px;
+         	height: 60px;
+         	border-radius: 17px;
+         	font-size: 26px;
+         	margin-left: -107px;
+         }
+         .right
+         {
+         	background-image:url('b1.jpg') ;
+			background-repeat: no-repeat;
+         	width: 63%;
+         	height: 420px;
+         	float: left;
+         	margin-left: 22px;
+    		margin-top: 12px;
+    		border: 2px solid black;
+
+         }
+         #check1{
+         	margin-left: 15px;
+         	font-size: 30px;
+         	margin-top: 20px;
+         }
+         #fc{
+         	margin-left: 20px;
+         	margin-top: 20px;
+         	font-size: 19px;
+         	color: black;
+         }
+         #txt1{
+         	font-size: 19px;
+    		margin-left: 28px;
+         }
+         #check2{
+         	margin-left: 15px;
+         	margin-top: 20px;
+         }
+         #pi{
+         	margin-left: 20px;
+         	margin-left: 20px;
+         	font-size: 19px;
+         	color: black;
+         }
+          #txt2{
+         	font-size: 19px;
+    		margin-left: 68px;
+         }
+          #check3{
+         	margin-left: 15px;
+         	margin-top: 20px;
+         }
+         #ch{
+         	margin-left: 20px;
+         	margin-left: 20px;
+         	font-size: 19px;
+         	color: black;
+         }
+          #txt3{
+         	font-size: 19px;
+    		margin-left: 54px;
+         }
+          #check4{
+         	margin-left: 15px;
+         	margin-top: 20px;
+         }
+         #bu{
+         	margin-left: 20px;
+         	margin-left: 20px;
+         	font-size: 19px;
+         	color: black;
+         }
+          #txt4{
+         	font-size: 19px;
+    		margin-left: 61px;
+         }
+         #check5{
+         	margin-left: 15px;
+         	margin-top: 20px;
+         }
+         #mi{
+         	margin-left: 20px;
+         	margin-left: 20px;
+         	font-size: 19px;
+         	color: black;
+         }
+          #txt5{
+         	font-size: 19px;
+    		margin-left: 72px;
+         }
+         #check6{
+         	margin-left: 15px;
+         	margin-top: 20px;
+         }
+         #cho{
+         	margin-left: 20px;
+         	margin-left: 20px;
+         	font-size: 19px;
+         	color: black;
+         }
+          #txt6{
+         	font-size: 19px;
+    		margin-left: 42px;
+         }
+         .bill{
+         	background-color: bisque;
+    		width: 45%;
+    		height: 385px;
+    		float: left;
+    		margin-left: 434px;
+    		margin-top: -226px;
+    		border: 2px solid brown;
+         }
+         #item{
+         	margin-left: 48px;
+         	font-size: 15px;
+         	margin-top: 10px;
+         }
+         #total{
+         	font-size: 19px;
+         	margin-left: 20px;
+         	margin-top: 49px;
+         }
+         #item2{
+         	margin-left: 15px;
+         	font-size: 15px;
+         	margin-top: 30px;
+         }
+         #total2{
+         	font-size: 19px;
+         	margin-left: 22px;
+         	margin-top: 30px;
+         }
+          #item3{
+         	margin-left: 15px;
+         	font-size: 15px;
+         	margin-top: 30px;
+         }
+         #total3{
+         	font-size: 19px;
+         	margin-left: 32px;
+         	margin-top: 30px;
+         }
+          #item4{
+         	margin-left: 15px;
+         	font-size: 15px;
+         	margin-top: 30px;
+         }
+         #total4{
+         	font-size: 19px;
+         	margin-left: 57px;
+         	margin-top: 30px;
+         }
+          #item5{
+         	margin-left: 15px;
+         	font-size: 15px;
+         	margin-top: 30px;
+         }
+         #total5{
+         	font-size: 19px;
+         	margin-left: 49px;
+         	margin-top: 30px;
+         }
+         #sub{
+         	margin-left: 50px;
+         	width: 55px;
+         }
+
+	</style>
+	<script>
+		function hello() {
+			let fruit=50;  let pizza=20;   let cheese=15;   let butter=10;   let milk=5;  let choclate=40;
+			let a=document.getElementById('txt1').value;
+			let b=document.getElementById('txt2').value;
+			let c=document.getElementById('txt3').value;
+			let d=document.getElementById('txt4').value;
+			let e=document.getElementById('txt5').value;
+			let f=document.getElementById('txt6').value;
+			fruit=fruit*a;
+			pizza=pizza*b;
+			cheese=cheese*c;
+			butter=butter*d;
+			milk=milk*e;
+			choclate=choclate*f;
+			let total=fruit+pizza+cheese+butter+milk+choclate;
+			let gst=(total*2)/100;
+			let cgst=(total*6)/100;
+			let dis=(total+gst+cgst)*(15/100);
+			let tot=total+gst+cgst-dis;
+			document.getElementById('total').value=total;
+			document.getElementById('total4').value=gst;
+			document.getElementById('total5').value=cgst;
+			document.getElementById('total3').value=dis;
+			document.getElementById('total2').value=tot
+		}
+		function dis(val)
+		{
+			document.getElementById('result').value+=val;
+		}
+		function solve()
+		{
+			var a=document.getElementById('result').value;
+			var b=eval(a);
+			document.getElementById('result').value=b;
+		}
+		function backspace()
+		{
+			result.value=result.value.slice(0, -1);
+		}
+		function clr()
+		{
+			document.getElementById('result').value=" ";
+		}
+
+
+
+
+	</script>
+	<body>
+		<div class="container">
+				<h1 style="text-align: center;font-size: 49px;margin-top: 18px;">Billing System </h1>
+				<div class="div2">
+				<table>
+				<tr>
+					<td colspan="3">
+						<input type="text" id="result"/>
+					</td>
+					<td>
+						<input type="button"id="back" value="back" onclick="backspace()"/>
+					</td>
+					<td>
+						<input type="button"id="clear" value="c" onclick="clr()"/>
+					</td>
+				</tr>	
+				<tr>
+					<td><input type="button" value="1" onclick="dis('1')"/></td>
+					<td><input type="button" value="2" onclick="dis('2')"/></td>
+					<td><input type="button" value="3" onclick="dis('3')"/></td>
+					<td><input type="button" value="/" onclick="dis('/')"/></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="4" onclick="dis('4')"/></td>
+					<td><input type="button" value="5" onclick="dis('5')"/></td>
+					<td><input type="button" value="6" onclick="dis('6')"/></td>
+					<td><input type="button" value="-" onclick="dis('-')"/></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="7" onclick="dis('7')"/></td>
+					<td><input type="button" value="8" onclick="dis('8')"/></td>
+					<td><input type="button" value="9" onclick="dis('9')"/></td>
+					<td><input type="button" value="+" onclick="dis('+')"/></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="." onclick="dis('.')"/></td>
+					<td><input type="button" value="0" onclick="dis('0')"/></td>
+					<td><input type="button" value="=" onclick="solve( )"/></td>
+					<td><input type="button" value="*" onclick="dis('*')"/></td>
+				</tr>
+			</table>
+				</div>
+			<div class=right>
+				<input type="checkbox"id="check1">
+				<label id="fc">Fruit Cake</label>
+				<input type="text" id="txt1"><br>
+				<input type="checkbox" id="check2">
+				<label id="pi">Pizza</label>
+				<input type="text"id="txt2"><br>
+				<input type="checkbox" id="check3">
+				<label id="ch">Cheese</label>
+				<input type="text"id="txt3"><br>
+				<input type="checkbox" id="check4">
+				<label id="bu">Butter</label>
+				<input type="text"id="txt4"><br>
+				<input type="checkbox" id="check5">
+				<label id="mi">Milk</label>
+				<input type="text"id="txt5"><br>
+				<input type="checkbox" id="check6">
+				<label id="cho">Choclate</label>
+				<input type="text"id="txt6"><br>
+				<button id="sub" onclick="hello()">Submit</button>
+
+				
+				<div class="bill">
+				<label id="item">Total</label>
+				<input type="text" id="total">	
+				<label id="item4">GST</label>
+				<input type="text" id="total4">
+				<label id="item5">CGST</label>
+				<input type="text" id="total5">
+				<label id="item3">Discount</label>
+				<input type="text" id="total3">
+				<label id="item2">Total Price</label>
+				<input type="text" id="total2">	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

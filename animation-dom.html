@@ -1,0 +1,246 @@
+<html>
+    <head>
+        <title>Animation-DOM</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80vh;
+            height: 80vh;
+            background-color: rebeccapurple;
+            position: relative;
+        }
+        #animation{
+            width: 60px;
+            height: 60px;
+            background-color: pink;
+            position: absolute;
+            top: 15px;
+           
+        }
+        #a1{
+            position: absolute;
+            left: 0;
+			top: 0;
+        }
+        #a2{
+            
+           position: absolute;
+           right: 0;
+	       top: 0;
+        }
+        #a3{
+           position: absolute;
+           bottom: 0;
+		   right: 0; 
+        }   
+        #a4{
+           position: absolute;
+           left: 0;
+		   bottom: 0;
+        }
+        #center{
+            position: absolute;
+            font-size: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+  
+        }
+        #center2{
+            position: absolute;
+            font-size: 10px;
+            top: 50%;
+            left: 52%;
+            transform: translate(-54%,-54%);
+  
+        }
+        #center3{
+            position: absolute;
+            font-size: 10px;
+            top: 53%;
+            left: 52%;
+            transform: translate(-54%,-54%);
+  
+        }
+        #center4{
+            position: absolute;
+            font-size: 10px;
+            top: 53%;
+            left: 50%;
+            transform: translate(-54%,-54%);
+  
+        }
+    </style>
+    <body>
+        <div  class="container">
+        <button id="a1" onclick="move1()">Left</button>
+        <button id="a2" onclick="move2()">Right</button>
+        <button id="a3" onclick="move3()">Bottom-Right</button>
+        <button id="a4" onclick="move4()">Bottom-Left</button>
+        <button id="center" onclick="move5()">1</button>
+        <button id="center2" onclick="move6()">2</button>
+        <button id="center3" onclick="move7()">3</button>
+        <button id="center4" onclick="move8()">4</button>
+       <div id="animation">
+
+            </div>
+        </div>
+    </body>
+    <script>
+        function move1(){
+            var a=document.getElementById('animation');
+            let id = null;  
+            let pos = 466;
+            clearInterval(id);
+            id = setInterval(frame, 1);
+            function frame() {
+                if (pos == 0) {
+                clearInterval(id);
+                } 
+                else {
+                    pos--;
+                
+                   
+		            a.style.bottom=pos + "px";
+                    a.style.top=pos + "px";
+                    }
+                 }
+            }
+        function move2(){
+            var b=document.getElementById('animation');
+            let id = null;  
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 1);
+            function frame() {
+                if (pos == 466) {
+                clearInterval(id);
+                } 
+                else {
+                    pos++;
+                
+                    
+                    b.style.left = pos + "px"; 
+                    }
+                 }
+            }
+        
+        function move3(){
+            var c=document.getElementById('animation');
+            let id = null;  
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 1);
+            function frame() {
+                if (pos == 466) {
+                clearInterval(id);
+                } 
+                else {
+                    pos++;
+                
+                    
+                    c.style.top = pos + "px"; 
+                    }
+                 }
+        }
+        function move4(){
+            var d=document.getElementById('animation');
+            let id = null;  
+            let pos = 466;
+            clearInterval(id);
+            id = setInterval(frame, 1);
+            function frame() {
+                if (pos == 0) {
+                clearInterval(id);
+                } 
+                else {
+                    pos--;
+                
+                    
+                    d.style.left = pos + "px"; 
+                    }
+                 }
+        }
+        function move5(){
+            var e=document.getElementById('animation');
+            let id = null;  
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame1, 1);
+            function frame1() {
+                if (pos == 230) {
+                clearInterval(id);
+                } 
+                else {
+                    pos++;
+                
+                    e.style.top = pos + "px";
+                    e.style.left = pos + "px"; 
+                   
+                    }
+                 }
+        }
+        function move6(){
+            var f=document.getElementById('animation');
+            let id = null;  
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame2, 1);
+            function frame2() {
+                if (pos == 230) {
+                clearInterval(id);
+                } 
+                else {
+                    pos++;
+                
+                    f.style.top = pos + "px";
+                    f.style.right = pos + "px"; 
+                   
+                    }
+                 }
+        }
+        function move7(){
+            var g=document.getElementById('animation');
+            let id = null;  
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame3, 1);
+            function frame3() {
+                if (pos == 230) {
+                clearInterval(id);
+                } 
+                else {
+                    pos++;
+                
+                    g.style.bottom = pos + "px";
+                    g.style.right = pos + "px"; 
+                   
+                    }
+                 }
+        }
+        function move8(){
+            var h=document.getElementById('animation');
+            let id = null;  
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame4, 1);
+            function frame4() {
+                if (pos == 230) {
+                clearInterval(id);
+                } 
+                else {
+                    pos++;
+                
+                    h.style.bottom = pos + "px";
+                    h.style.left = pos + "px"; 
+                   
+                    }
+                 }
+        }
+    </script>
+</html>

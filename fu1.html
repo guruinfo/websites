@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>fun1</title>
+    </head>
+    <body>
+        <input type="text" id="a1" >
+        <select onchange="hello()">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+        </select>
+        <!-- <button onclick="hello()">submit</button> -->
+        <p id="demo"></p>
+    </body>
+    <script>
+        function myFunction()
+        {
+        
+         var a=document.getElementById("a1").value;
+         var p=document.getElementById("demo").innerHTML=a;
+        }
+        function hello(){
+            alert(1);
+        }
+        
+    </script>
+</html>

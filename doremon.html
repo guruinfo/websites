@@ -1,0 +1,287 @@
+<html>
+<head>
+	<title>Doremon</title>
+	</head>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		.circle1{
+			background-color: #66CEF5;
+			width: 21%;
+			height: 40%;
+			border-radius: 50%;
+			margin-left: 35%;
+    		margin-top: 35px;
+    		border:2px solid black ;
+		}
+		.circle2{
+			background-color: white;
+			width: 17%;
+			height: 34%;
+			border-radius: 50%;
+			margin-left: 37%;
+    		margin-top: -224px;
+    		border:2px solid black ;
+    		position: relative;
+		}
+		.left-eye{
+			background-color: white;
+			width: 65px;
+			height: 70px;
+			border-radius: 50%;
+			position: absolute;
+			margin-top:-253px;
+			margin-left: 555px;
+			border: 2px solid black;
+		}
+		.right-eye{
+			background-color: white;
+			width: 65px;
+			height: 70px;
+			border-radius: 50%;
+			position: absolute;
+			margin-top: -253px;
+			margin-left: 619px;
+			border: 2px solid black;
+		}
+		.black-eye-left{
+			background-color: black;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			margin-left: 590px;
+			margin-top: -216px;
+			position: absolute;
+		}
+		.black-eye-right{
+			background-color: black;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			margin-left: 630px;
+			margin-top: -216px;
+			position: absolute;
+		}
+		.nose{
+			background-color: red;
+			width: 60px;
+			height: 55px;
+			margin-top:-194px ;
+			margin-left:590px ;
+			border-radius: 50%;
+			border: 2px solid black;
+			position: absolute;
+		}
+		.nose2{
+			background-color: white;
+			width: 14px;
+			height: 14px;
+			margin-top:-177px ;
+			margin-left:597px ;
+			border-radius: 50%;
+			
+			position: absolute;
+		}
+		.line{
+			background-color: black;
+			width: 2px;
+			height: 84px;
+			margin-left: 618px;
+			margin-top: -141px;
+			position: absolute;
+		}
+		.line-left1{
+			background-color: black;
+			width: 2px;
+			height: 90px;
+			transform: rotate(108deg);
+			margin-top: -184px;
+			margin-left:566px;
+		}
+		.line-left2{
+			background-color: black;
+			width: 2px;
+			height: 90px;
+			transform: rotate(92deg);
+			margin-top: -62px;
+			margin-left: 563px;
+		}
+		.line-left3{
+			background-color: black;
+			width: 2px;
+			height: 90px;
+			transform: rotate(78deg);
+			margin-top: -64px;
+			margin-left: 563px;
+		}
+		.line-right1{
+			background-color: black;
+			width: 2px;
+			height: 90px;
+			transform: rotate(68deg);
+			margin-left: 670px;
+			margin-top: -147px;
+		}
+		.line-right2{
+			background-color: black;
+			width: 2px;
+			height: 90px;
+			transform: rotate(84deg);
+			margin-left: 676px;
+			margin-top: -63px;
+		}
+		.line-right3{
+			background-color: black;
+			width: 2px;
+			height: 90px;
+			transform: rotate(100deg);
+			margin-left: 674px;
+			margin-top: -62px;
+		}
+		.smile{
+			
+			width: 150px;
+			height: 134px;
+			 border-bottom: 8px solid #222;
+ 			 border-radius: 100%;
+ 			 z-index: 1;
+			margin-top: -142px;
+			margin-left: 544px;
+			position: absolute;
+		}
+		.belt{
+			background-color: red;
+    		width: 185px;
+    		height: 28px;
+    		position: relative;
+    		margin-left: 528px;
+    		margin-top: 12px;
+    		border: 2px solid black;
+    		border-radius: 5px;
+    		border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
+
+    	
+		}
+		.yellow{
+			background-color: #F9E036;
+			width:50px;
+			height: 50px;
+			position: absolute;
+			margin-top: -26px;
+			margin-left: 592px;
+			border-radius: 50%;
+			border: 2px solid black;
+		}
+		.yellow2{
+			background-color:#F9E036 ;
+			width: 50px;
+			height: 10px;
+			border: 2px solid black;
+			border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
+    		border-bottom-left-radius: 10px;
+    		border-bottom-right-radius: 10px;
+    		margin-left: 592px;
+   			margin-top: -13px;
+    		position: absolute;
+		}
+		.yellow-circle{
+			background-color: brown;
+			width: 10px;
+			height: 10px;
+			margin-top: 3px;
+			margin-left: 612px;
+			position: absolute;
+			border-radius: 50%;
+			border: 2px solid black;
+		}
+		.yellow-line{
+			background-color: brown;
+			width: 2px;
+			height: 9px;
+			margin-left: 616px;
+			position: absolute;
+			margin-top: 13px;
+		}
+		.stomach{
+			background-color:#66CEF5;
+			width: 185px;
+			height: 191px;
+			margin-left: 528px;
+			margin-top: -25px;
+			border: 2px solid black;
+			border-radius: 8px;
+			
+		}
+		.c1{
+			background-color: white;
+    		width: 170px;
+    		height: 159px;
+    		border-radius: 50%;
+    		border: 2px solid black;
+    		margin-top: 19px;
+    		margin-left: 5px;
+		}
+		.pocket{
+			background-color: white;
+			width: 127px;
+			height: 76px;
+			border: 2px solid black;
+			margin-left: 28px;
+			margin-top: -87px;
+			border-bottom-left-radius: 71px;
+			border-bottom-right-radius: 71px;
+		}
+		.left-hand-line{
+			background-color: black;
+			width: 3px;
+			height: 40px;
+			margin-top: 10px;
+			margin-left: 10px;
+			transform: rotate(45deg);
+		}
+		.left-hand{
+			background-color: white;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			border: 2px solid black;
+			margin-left: 10px;
+			margin-top:10px ;
+		}
+
+	</style>
+	<body>
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<div class="left-eye"></div>
+		<div class="right-eye"></div>
+		<div class="black-eye-left"></div>
+		<div class="black-eye-right"></div>
+		<div class="nose"></div>
+		<div class="nose2"></div>
+		<div class="line"></div>
+		<div class="line-left1"></div>
+		<div class="line-left2"></div>
+		<div class="line-left3"></div>
+		<div class="line-right1"></div>
+		<div class="line-right2"></div>
+		<div class="line-right3"></div>
+		<div class="smile"></div>
+		<div class="belt"></div>
+		<div class="yellow"></div>
+		<div class="yellow2"></div>
+		<div class="yellow-circle"></div>
+		<div class="yellow-line"></div>
+		<div class="stomach">
+			<div class="c1"></div>
+			<div class="pocket"></div>
+		</div>
+		<div class="left-hand-line"></div>
+		<div class="left-hand"></div>
+	</body>
+</html>

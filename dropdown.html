@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>dropdown</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .main{
+                width: 100%;
+                height: 50px;
+                background-color: rosybrown;
+            }
+           ul.main li.main_link{
+                float: left;
+                color: black;
+                list-style: none;
+                position: relative;
+                margin-left: 20px;
+                padding: 10px;
+                /* line-height: 90px; */
+            }
+            ul li ul.dropdown{
+                min-width: 100%;
+                position: absolute;
+                list-style: none;
+                background-color: rosybrown;
+                left: -10x;
+                top: 40px;
+                display: none;
+            }
+            ul li ul.dropdown li.link1{
+                display: block;
+            text-align: left;
+            padding: 10px; 
+              }
+              #home:hover .dropdown{display: block;}
+        </style>
+    </head>
+    <body>
+        <ul class="main">
+            <li id="home" class="main_link">home
+                <ul class="dropdown">
+                    <li  class="link1">home1</li>
+                    <li class="link1">home2</li>
+                    <li class="link1">home3</li>
+                    <li class="link1">home4</li>
+                    <li class="link1">home5</li>
+                </ul>
+            </li> 
+            <li class="main_link">Music</li>
+            <li class="main_link">video</li>
+            <li class="main_link">about</li>
+        </ul>
+    </body>
+</html>

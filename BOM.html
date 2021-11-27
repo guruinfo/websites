@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>BOM</title>
+    </head>
+    <style>
+        
+    </style>
+    <body>
+        <h2>Javascript Window</h2>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <button onclick="openwin()">open"my window"</button>
+        <button onclick="movewin()">move"my window"</button><br><br>
+        <button onclick="goBack()">Back</button>
+        <button onclick="goForward()">Forward</button><br><br>
+        <button onclick="myfunction()">Try it</button>
+        <p id="demo3"></p>
+        <p id="ba"></p>
+        <button onclick="hello()">Try it</button>
+        <p id="prompt"></p>
+        <button onclick="hello2()">Try it Yourself</button>
+        <p id="prompt2"></p>
+        <button onclick="open2()">Width</button>
+        <p id="prompt3"></p>
+    </body>
+    <script>
+        document.getElementById("demo").innerHTML=
+        "Browser inner width:" + window.innerWidth + "px<br>" +
+         "Browser inner height:" + window.innerHeight +"px";
+
+
+         document.getElementById("demo2").innerHTML="Screen Width is"+ screen.width;
+
+         var myWindow;
+         function openwin(){
+            myWindow=window.open("", "myWindow", "width=200, height=100");
+            myWindow.document.write("<p>Hello Arsh!</p>");
+         }
+         function movewin(){
+             myWindow.moveTo(500, 200)
+             myWindow.focus();
+         }
+
+
+
+         function goBack(){
+             window.history.back()
+           
+         }
+         function goForward(){
+             window.history.forward()
+             window.location.assign("https://www.w3schools.com")
+             document.getElementById("ba").innerHTML;
+         }
+
+
+         function myfunction(){
+             var txt;
+             if (confirm("press a button!")){
+                 txt="You pressed ok";
+             }else{
+                 txt="you pressed cancel";
+             }
+             document.getElementById("demo3").innerHTML=txt;
+
+         }
+         function hello(){
+             var text;
+             let person = prompt("Please enter your name:", "Arsh");
+              if (person == null || person == "") {
+             text = "User cancelled the prompt.";
+             } else {
+            text = "Hello " + person + "! How are you today?";
+            }
+                document.getElementById("prompt").innerHTML = text;
+            }
+                 
+           function hello2(){
+               var txt;
+               let site = prompt("please assign your site:" , "www.w3schools.com");
+               if(site ==null || site==""){
+                   txt="Doesn't Exists";
+               }else{
+                window.location.assign("https://www.w3schools.com") 
+               }
+               document.getElementById("prompt2").innerHTML=txt;
+            }
+
+
+        function open2(){
+               var txt;
+               var wind;
+               let w = prompt("please assign your width:");
+               if(w ==null || w==""){
+                   txt="Doesn't Exists";
+               }else{
+                wind=window.open("", "wind", "width="+w+", height=500");
+               }
+               document.getElementById("prompt3").innerHTML=txt;
+            }
+
+  
+       
+         
+
+    </script>
+</html>

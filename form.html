@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form action="/action_page.php" target="_blank">
+		<fieldset>
+			<legend>Personalia:</legend>
+		<label>Username:-</label><br>
+		<input type="text"name="name1"><br><br>
+		<label>E-mail:-</label><br>
+		<input type="text"name="name2"><br><br>
+		<label>Password:-</label><br>
+		<input type="text" name="name3"><br><br>
+		<label for="phone">Enter a phone Number:-</label><br>
+		<input type="tel" id="phone" name="phone"placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"required><br><br>
+		<label>color:-</label><br>
+		<input type="color"><br>
+		<label for="name6">Range:-</label>
+		<input type="range"><br><br>
+		<label>Male:-</label>
+		<input type="radio"name="female">
+		<label>Female:-</label>
+		<input type="radio"name="female"><br><br>
+		<input type="url"name="homepage"><br><br>
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+		<label for="vehicle1"> I have a bike</label><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+		<label for="vehicle2"> I have a car</label><br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" value="boat">
+		<label for="vehicle3"> I have a boat</label><br><br>
+
+		<h2>The select element</h2>
+		<label for="cars">choose a car:</label>
+		<select id="cars" name="cars" size="3">
+			<option value="volvo">volvo</option>
+			<option value="saab">saab</option>
+			<option value="fiat">fiat</option>
+			<option value="audi">audi</option><br><br>
+
+		</select>
+				<br>	<input type="submit" value="Submit">
+	</fieldset>
+	</form>
+</body>
+</html>

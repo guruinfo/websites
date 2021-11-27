@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>electricity</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="style8.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Personalia:</legend>  
+                <label>Fullname:-</label>
+                <input type="text" id="a1" name="name1"><br><br>
+                <label>Usage:-</label>
+                <input type="text" id="a2" name="name2"><br><br>
+                <label>Cost:-</label>
+                <input type="text" id="a3" name="name3"><br><br>
+                
+                <button onclick="hello()">submit</button>
+            </fieldset>
+        </form>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+   </body>
+   <script>
+       function hello()
+       { 
+           var p;
+           var cost;
+           var atotal;
+           var vat;
+
+           var a=document.getElementById("a1").value;
+           var b=document.getElementById("a2").value;
+           var c=document.getElementById("a3").value;
+          
+           if(1<100)
+           {
+               cost=c*1.2;
+               vat=cost*(15/100);
+                atotal=cost+vat;
+           }
+           else if(101<300)
+           {
+            cost=c*1.5;
+               vat=15/100*cost;
+                atotal=cost+vat;
+           }
+           else if(301<500)
+           {
+            cost=c*2.1;
+               vat=15/100*cost;
+                atotal=cost+vat;
+           }
+           else if(500)
+           {
+            cost=c*2.5;
+               vat=15/100*cost;
+                atotal=cost+vat;
+           }
+           else{
+               Document.write("not");
+           }
+           var p=document.getElementById("demo").innerHTML=cost;
+           var p=document.getElementById("demo").innerHTML=vat;
+           var p=document.getElementById("demo").innerHTML=atotal;
+       }
+   </script>
+</html>

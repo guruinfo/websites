@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>object</title>
+    </head>
+    <body>
+        <h1>objects</h1>
+       <p id="demo"></id> </p>
+        <script>
+            const cars={
+                name: "BMW",
+                color: "white",
+                model: "600",
+                fullname: function ()
+                {return this.name+" "+this.color;}
+            }
+            var a = cars.name;
+            var b = cars.color;
+            document.write(a);
+            document.write(b);
+            var c=document.getElementById("demo");
+            c.innerHTML=a+"&nbsp"+b;
+            document.write(cars.fullname());
+            // document.getElementById("demo").innerHTML = "The car type is " + cars.name +" and the color is " + cars.color +"&nbsp;"+ "model no " +cars.model;
+        </script>
+    </body>
+</html>

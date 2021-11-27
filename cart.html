@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Cart</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="style8.css">
+        <style>
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="left-div">
+                <div class="iphone"></div>
+                <input type="button"id="less"onclick="hello()" value="-">
+                <input type="text" disabled id="a1" value="1">
+                <input type="button"id="more"onclick="hello2()" value="+">
+
+
+            </div>
+            <div class="center">
+                <h2 style="margin-top:178px">APPLE iPhone 12 Pro(Silver,512 GB)</h2>
+                <p style="color: grey;margin-left: 10px;margin-top: 5px;font-size: 13px;">(1,002)</p>
+                <img id="img" src="flipcartassured2.jpg">
+                <h4 style="margin-top: 10px;margin-left: 10px;">&#x20b9 1,39,900</h4>
+                <h5 style="color: green; margin-top: 5px;margin-left: 10px;">2 offers applied * 1 offer avaliable</h5>
+                <input type="button" id="save"value="SAVE FOR LATER">
+                <input type="button" id="remove" value="REMOVE">
+            </div>
+            <div class="right-div">
+                <i id="font" class="fas fa-shopping-cart"></i>
+                
+                <p style="margin-left: 21px;margin-top: 184px;">Delivery by Mon Oct30|Free &#x20b9 40 </p>
+            <input type="submit"id="order" value="PLACE ORDER">
+            </div>
+            
+        </div>
+    </body>
+    <script>
+        
+    function hello(){
+        
+        
+        var x = document.getElementById("a1").value;
+        var d=x.value = x-1;
+        document.getElementById("a1").value=d;
+        if(d<=1){
+            document.getElementById("less").disabled=true;
+            
+        }
+        else{
+            ;
+        }
+        // console.log(d);
+    //    if(num<min){
+    //     num=num-1;
+        //  less.innerText=a1;
+        document.getElementById("font").value=d;
+        }
+    //    console.log('a1');
+        
+    
+    function hello2(){
+        var y = document.getElementById("a1").value;
+        y=parseInt(y);
+        // var c=y.value= y+1;
+        document.getElementById("a1").value=y+1;
+        // console.log(c);
+        // if(num>max){
+        //     num=num+1;
+            // more.innerText=more;
+        }  
+
+    
+    
+    
+    </script>
+</html>
