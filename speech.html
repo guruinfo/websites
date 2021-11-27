@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Speech-Recognition</title>
+    </head>
+    <style>
+                	body {
+			    font-family: arial;
+			}
+			button {
+			    padding:10px;
+			    background-color:#6a67ce;
+			    color: #FFFFFF;
+			    border: 0px;
+			    cursor:pointer;
+			    border-radius: 5px;
+			}
+			#output {
+			    background-color:#F9F9F9;
+			    padding:10px;
+			    width: 100%;
+			    margin-top:20px;
+			    line-height:30px;
+			}
+			.hide {
+			    display:none;
+			}
+			.show {
+			    display:block;
+			}
+    </style>
+    <body>
+        <h1>Speech-Recognition Javascript</h1>
+        <button onclick="runspeechRecognition()">Speech to text</button>
+        <p id="action"></p>
+        <div id="output" class="hide"></div>
+        <script>
+            function runspeechRecognition(){
+                var output=document.getElementById("output");
+                var action=document.getElementById("action");
+                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                var recognition = new SpeechRecognition();
+
+                recognition.onstart = function(){
+                    action.innerHTML = "<small>listening, please speak</small>";
+                }
+                recognition.onspeechend = function(){
+                    action.innerHTML ="<small>stopped listening, hope you are done</small>";
+                    recognition.stop();
+                }
+                recognition.onresult = function(event){
+                    var transcript =event.results[0][0].transcript;
+                    var confidence =event.results[0][0].confidence;
+                    output.innerHTML ="<b>Text:</b>" +transcript+"<br/> <b>Confidence:</b>"+confidence*100+"%";
+                    output.classList.remove("hide");
+                }
+                recognition.start();
+            }
+        </script>
+    </body>
+</html>

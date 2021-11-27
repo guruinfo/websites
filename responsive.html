@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>responsive</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .flex-container{
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+            }
+            .flex-left{
+                background-color:rosybrown;
+                flex:50%;
+                padding: 10px;
+            }
+            .flex-right{
+                background-color:seagreen;
+                flex:50%;
+                padding: 10px;
+            }
+            @media screen and (max-width: 480px){
+                .flex-container {
+                    flex-direction: column;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-left">1</div>
+            <div class="flex-right">2</div>
+        </div>
+    </body>
+</html>

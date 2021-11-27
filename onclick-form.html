@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Onclick-form</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: blueviolet;
+            position: relative;
+            float: left;
+        }
+        .container2{
+            width: 50%;
+            height: 50vh;
+            background-color: white;
+            box-shadow: 0 0 10px 5px;
+            box-shadow: grey;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="container2">
+                <button onclick="hello()">Click Here</button>
+                <p id="a1"></p>
+            </div>
+        </div>
+    </body>
+    <script>
+        var a=document.getElementById("a1");
+        function hello(){
+            var form=document.createElement("form");
+            
+            // form.setAttribute("id","a2");
+            // document.body.appendChild(form);
+           
+        
+            var y=document.createElement("input");
+            y.setAttribute("type","text");
+            y.setAttribute("value","Fullname:");
+            var b=document.createElement("br")
+
+            var email=document.createElement("input");
+            email.setAttribute("type","text");
+            email.setAttribute("value","Email:");
+            
+  
+            var DOB=document.createElement("input");
+            DOB.setAttribute("type","text");
+            DOB.setAttribute("value","DOB:");
+           
+  
+            var s=document.createElement("input");
+            s.setAttribute("type","button");
+            s.setAttribute("value","Submit");
+            
+  
+           form.appendChild(y);
+           form.appendChild(b);
+          
+           form.appendChild(email);
+           form.appendChild(DOB);
+           form.appendChild(s);
+           
+         
+            document.getElementsByTagName("div")[1].appendChild(form);
+        }
+    </script>
+</html>

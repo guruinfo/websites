@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button>Click me</button>
+    <p id="demo"></p>
+</body>
+<script>
+    var i=0;
+    var txt="Hello Arsh"
+    $(document).ready(function(){
+        $('button').click(function(){
+            if(i <txt.length)
+            {
+           
+                $('#demo').css.fontSize = "xxx-large";
+                $('#demo').css.display = "flex";
+                $('#demo').css.justifyContent="center";
+                $('#demo').css.marginTop="30px"; 
+                $(demo).text(txt.charAt(i));
+                i++;
+                // setTimeout(2000);
+            }
+        
+        });
+    });
+</script>
+</html>

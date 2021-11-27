@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Education-Site</title>
+</head>
+<style>
+    #dotted{
+        border-top: 2px dotted ;
+        border-bottom: 2px dotted ;
+        padding-top: 2%; 
+        padding-bottom: 2%; 
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .div1{
+    position: relative;
+    width:300px;
+    height: 300px;
+    transition: transform 2s;
+    /* margin-top: 0; */
+    display: block;
+    overflow: hidden;
+}
+.div1 img{
+    width: 100%;
+    height: 100%;
+}
+.t1{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 80px;;
+    display: none;
+    width: 100%;
+ }
+.div1 img:hover {
+    cursor: pointer;
+    visibility: visible;
+    margin-top: -40px;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    
+ }
+ img:hover + .t1{
+     display: block;
+     
+  /* background-color:green; */
+}
+.div2{
+    position: relative;
+    width:300px;
+    height: 300px;
+    transition: transform 2s;
+    /* margin-top: 0; */
+    display: block;
+    overflow: hidden;
+}
+.div2 img{
+    width: 100%;
+    height: 100%;
+}
+.t2{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 80px;;
+    display: none;
+    width: 100%;
+ }
+.div2 img:hover {
+    cursor: pointer;
+    visibility: visible;
+    margin-top: -40px;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    
+ }
+ img:hover + .t2{
+     display: block;
+     
+  /* background-color:green; */
+}
+.div3{
+    position: relative;
+    width:300px;
+    height: 300px;
+    transition: transform 2s;
+    /* margin-top: 0; */
+    display: block;
+    overflow: hidden;
+}
+.div3 img{
+    width: 100%;
+    height: 100%;
+}
+.t3{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 80px;;
+    display: none;
+    width: 100%;
+ }
+.div3 img:hover {
+    cursor: pointer;
+    visibility: visible;
+    margin-top: -40px;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    
+ }
+ img:hover + .t3{
+     display: block;
+     
+  /* background-color:green; */
+}
+.div4{
+    position: relative;
+    width:300px;
+    height: 300px;
+    transition: transform 2s;
+    margin-top: 20px;
+    display: block;
+    overflow: hidden;
+    
+}
+.div4 img{
+    width: 100%;
+    height: 100%;
+}
+.t4{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 80px;;
+    display: none;
+    width: 100%;
+ }
+.div4 img:hover {
+    cursor: pointer;
+    visibility: visible;
+    margin-top: -40px;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    
+ }
+ img:hover + .t4{
+     display: block;
+     
+  /* background-color:green; */
+}
+.div5{
+    position: relative;
+    width:300px;
+    height: 300px;
+    transition: transform 2s;
+    margin-top: 20px;
+    display: block;
+    overflow: hidden;
+}
+.div5 img{
+    width: 100%;
+    height: 100%;
+}
+.t5{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 80px;;
+    display: none;
+    width: 100%;
+ }
+.div5 img:hover {
+    cursor: pointer;
+    visibility: visible;
+    margin-top: -40px;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    
+ }
+ img:hover + .t5{
+     display: block;
+     
+  /* background-color:green; */
+}
+.div6{
+    position: relative;
+    width:300px;
+    height: 300px;
+    transition: transform 2s;
+    margin-top: 20px;
+    display: block;
+    overflow: hidden;
+    
+}
+.div6 img{
+    width: 100%;
+    height: 100%;
+}
+.t6{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 80px;;
+    display: none;
+    width: 100%;
+ }
+.div6 img:hover {
+    cursor: pointer;
+    visibility: visible;
+    margin-top: -40px;
+    transition-timing-function: ease-in-out;
+    transition: all 0.5s;
+    
+ }
+ img:hover + .t6{
+     display: block;
+     
+  /* background-color:green; */
+}
+.circle
+{
+  width: 50%;
+  height: 120%;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative; 
+  margin-left: 50px;
+}
+.icon{
+  color: black;
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+  position: absolute;
+  color: white;
+}
+.circle:hover{
+  background-color: white;
+  border: 8px solid orange;
+  cursor: pointer;
+}
+.circle:hover .icon{
+  /* background-color: red; */
+  color: orange;
+}
+.circle2
+{
+  width: 50%;
+  height: 120%;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative; 
+  margin-left: 50px;
+}
+.icon{
+  color: black;
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+  position: absolute;
+  color: white;
+}
+.circle2:hover{
+  background-color: white;
+  border: 8px solid orange;
+  cursor: pointer;
+}
+.circle2:hover .icon{
+  /* background-color: red; */
+  color: orange;
+}
+.circle3
+{
+  width: 50%;
+  height: 120%;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative; 
+  margin-left: 50px;
+}
+.icon{
+  color: black;
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+  position: absolute;
+  color: white;
+}
+.circle3:hover{
+  background-color: white;
+  border: 8px solid orange;
+  cursor: pointer;
+}
+.circle3:hover .icon{
+  /* background-color: red; */
+  color: orange;
+}
+.circle4
+{
+  width: 50%;
+  height: 120%;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative; 
+  margin-left: 50px;
+}
+.icon{
+  color: black;
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+  position: absolute;
+  color: white;
+}
+.circle4:hover{
+  background-color: white;
+  border: 8px solid orange;
+  cursor: pointer;
+}
+.circle4:hover .icon{
+  /* background-color: red; */
+  color: orange;
+}
+#info-01:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+</style>
+<body>
+    <div class="container-fluid bg-primary ">
+     <header class="animated fadeInDown delay1">   
+     <nav class="navbar  navbar-expand-lg bg-light navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo-diploma.png" alt="Avatar Logo" style="width:100px;" class="rounded-pill"> 
+              </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="#menu-Jumbotron">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#menu-feature">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#menu-gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#menu-Video">Video</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#menu-information">Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#menu-classes">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#menu-kids">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#menu-External">External</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      </header>
+      <div id="menu-Jumbotron">
+      <div class="container mt-3">
+  
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <div class="row bg-primary">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12 pt-5">
+                            <h1 class="display-3">Education is<br>great!</h1>
+
+                            <h4 id="dotted">Are you looking best School for your child?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> 
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <form>
+                            <input type="text" class="form-control " placeholder="Name" name="name">
+                            <input type="text" class="form-control mt-4" placeholder="Lastname" name="lastname">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Email" name="Email">
+                            <input type="text" class="form-control mt-4" placeholder="Phone" name="Phone">
+                        </div>
+                        <div class="col-md-6 mt-5  mx-auto ">
+                            <div class="text-center bg-danger  rounded">
+                                <button type="button" class="btn text-center text-white">REQUEST INFORMATION</button>
+                            </div>
+                        </form>
+                        </div>
+                    </form>
+                    </div>   
+                </div>  
+                <div class="col-md-6 mt-5">
+                    <img src="big-image.png" alt="image">
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      </div>
+    </div> 
+    <div id="menu-feature">
+      <div class="container mt-5 pt-5">
+        <div class="row text-center ">
+          <h2 class="text-danger">The Future is Waiting for You</h2>
+          <h6 class="text-black-50">Quisque eu lectus at sem imperdiet aliqua and pendisse a hendsumellus nec turpis sed tellus.</h6>
+       </div>
+      
+        
+        <div class="row mt-4">
+          <div class="col-md-3  text-white">
+            <div class="circle">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+              <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+            </svg>
+            </div>
+            <h5 class="text-center text-danger">Software Enginerring</h5>
+            <p class="text-black-50">Nulla ornare tortor quis rhoncus vulputate. Vivamus a enim vel erat.</p>
+          </div>
+          <div class="col-md-3  text-white">
+            <div class="circle2">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+              </svg>
+              </div>
+            <h5 class="text-center text-danger">Analytical Chemistry</h5>
+            <p class="text-black-50">Nulla ornare tortor quis rhoncus vulputate. Vivamus a enim vel erat.</p>
+          </div>
+          <div class="col-md-3  text-white">
+            <div class="circle3">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+              </svg>
+              </div>
+            <h5 class="text-center text-danger">Graphic Designer</h5>
+            <p class="text-black-50">Nulla ornare tortor quis rhoncus vulputate. Vivamus a enim vel erat.</p>
+          </div>
+        <div class="col-md-3  text-white">
+          <div class="circle4">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+              <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+            </svg>
+            </div>
+          <h5 class="text-center text-danger">Systems Management</h5>
+          <p class="text-black-50">Nulla ornare tortor quis rhoncus vulputate. Vivamus a enim vel erat.</p>
+        </div>
+      </div>
+      <br>
+        <div class="col-sm-3 mt-5 pt-5 mx-auto">
+        <div class="text-center bg-primary  rounded">
+          <button type="button" class="btn text-center text-white">Request a quote now!</button>
+        </div>
+       
+        </div>
+    </div> 
+  </div >
+     <div id="menu-gallery">
+      <div class="container mt-5 pt-5">
+        <div class="row text-center ">
+          <h2 class="text-danger">Classes image gallery</h2>
+          <h6 class="text-black-50">Quisque eu lectus at sem imperdiet aliqua and pendisse a hendsumellus nec turpis sed tellus.</h6>
+         </div>
+        <div class="row mt-4">
+           <div class="col-sm-4">
+             <div class="div1">
+              <img  src="11.jpg" alt="no image" title="Music Classes">
+                <div class="t1">
+                <h4>Music Classes</h4>
+                <5>Guitar,Paino and more!</h5>
+                  </div>
+             </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="div2">
+            <img  src="02.jpg" alt="no image" title="Music Classes">
+            <div class="t2">
+              <h4>Title of the image</h4>
+              <h5>Small Description</5>
+            </div>
+            </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="div3">
+            <img  src="03.jpg" alt="no image" title="Music Classes">
+            <div class="t3">
+              <h4>Title of the image</h4>
+              <h5>Small Description</h5>
+            </div>
+            </div>
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="div4">
+            <img  src="04.jpg" alt="no image" title="Music Classes">
+            <div class="t4">
+              <h4>Title of the image</h4>
+              <h5>Small Description</h5>
+            </div>
+            </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="div5">
+            <img  src="05.jpg" alt="no image" title="Music Classes">
+            <div class="t5">
+              <h4>Nice Food</h4>
+              <h5>Small Description</h5>
+            </div>
+            </div>
+           </div>
+           <div class="col-sm-4">
+            <div class="div6">
+            <img  src="06.jpg" alt="no image" title="Music Classes">
+            <div class="t6">
+              <h4>Natural Park</h4>
+              <h5>Small Description</h5>
+            </div>
+            </div>
+           </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="menu-video">
+      <div class="container mt-5 pt-5">
+        <div class="row" text-center>
+            <div class="col-md-4"> 
+              
+                
+              <h2 class="text-danger" style="font-weight: 400;">School Building Video <br>Tour</h2>
+              <p class="text-muted">Nulla ornare tortor quis rhoncus vulputate. Vivamus a enim vel erat accumsan hendrerit.
+                 Nulla ornare tortor quis rhoncus vulputate. Vivamus a enim vel erat accumsan hendrerit.</p>
+                 
+                 <ul>
+                   <li class="list-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    
+                     Nulla ornare tortor quis rhoncus vulputate
+
+                   </li>
+                   <li class="list-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    
+                    Vivamus a enim vel erat accumsan hendet.
+
+                   </li>
+                   <li class="list-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    Nulla ornare tortor quis rhoncus vulputate. 
+
+                   </li>
+                   <li class="list-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    
+                    Nulla ornare tortor quis rhoncus vulputate.
+
+                   </li>
+                   <li class="list-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    
+                    Nulla ornare tortor quis rhoncus vulputate. 
+
+                   </li>
+                   <li class="list-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                    </svg>
+                    
+                    Nulla ornare tortor quis rhoncus vulputate. 
+                  </li>
+                 </ul>
+                 </div>
+            
+            <div class="col-md-8">
+              
+               
+              <iframe width="100%" height="100%" 
+              src="http://player.vimeo.com/video/4240369">
+            </iframe>
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="menu-information">
+      <div class="container mt-5 pt-5">
+        <div class="row text-center ">
+          <h2 class="text-danger">Get All the information</h2>
+          <h6 class="text-black-50">Quisque eu lectus at sem imperdiet aliqua and pendisse a hendsumellus nec turpis sed tellus.</h6>
+         </div>
+          <div class="row ">
+           <div class="col-md-6 mt-5">
+            <img id="info-01"src="info-01.jpg" alt="image" title="Title-Example">
+           </div>
+            <div class="col-md-6 mt-5 px-4">
+              <h2 class="text-danger" style="font-weight: 400;">We are too good to be true</h2>
+              <h4 class="text-black-50">We have added swipe function to Bootstrap carousel.
+               It can be any width, depends of the layout that you want.
+               This one is 1/2 width. You can find full width slider in header of section.</h4><br>
+               <p class="text-black-50">There's a fire starting in my heart, Reaching a fever pitch and it's bringing me out the dark.
+                  Finally, I can see you crystal clear, Go ahead and sell me out and I'll lay your ship bare,
+                   See how I'll leave with every piece of you.</p>
+                   <div class="col-md-4">
+                    <div class="text-center bg-primary  rounded">
+                      <button type="button" class="btn text-center text-white">Read More</button>
+                    </div>
+                  </div>
+            </div>
+           
+        </div>
+
+
+
+
+        
+          <div class="row mt-5 ">
+           
+            <div class="col-md-6 mt-5 px-4">
+              <h2 class="text-danger" style="font-weight: 400;">We are learn all the time</h2>
+              <h4 class="text-black-50">We have added swipe function to Bootstrap carousel.
+               It can be any width, depends of the layout that you want.
+               This one is 1/2 width. You can find full width slider in header of section.</h4><br>
+               <p class="text-black-50">There's a fire starting in my heart, Reaching a fever pitch and it's bringing me out the dark.
+                  Finally, I can see you crystal clear, Go ahead and sell me out and I'll lay your ship bare,
+                   See how I'll leave with every piece of you.</p>
+                   <div class="col-md-4">
+                    <div class="text-center bg-primary  rounded">
+                      <button type="button" class="btn text-center text-white">Read More</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <img id="info-01"src="info-02.jpg" alt="image"width="100%"height="100%" title="Title-Example">
+             </div>
+          </div>
+
+          <div class="row mt-5 ">
+            <div class="col-md-6 mt-5">
+              <img id="info-01"src="info-03.jpg" alt="image" title="Title-Example">
+             </div>
+          
+            <div class="col-md-6 mt-5 px-4">
+              <h2 class="text-danger" style="font-weight: 400;">The Best classes for kids</h2>
+              <h4 class="text-black-50">We have added swipe function to Bootstrap carousel.
+               It can be any width, depends of the layout that you want.
+               This one is 1/2 width. You can find full width slider in header of section.</h4><br>
+               <p class="text-black-50">There's a fire starting in my heart, Reaching a fever pitch and it's bringing me out the dark.
+                  Finally, I can see you crystal clear, Go ahead and sell me out and I'll lay your ship bare,
+                   See how I'll leave with every piece of you.</p>
+                   <div class="col-md-4">
+                    <div class="text-center bg-primary  rounded">
+                      <button type="button" class="btn text-center text-white">Read More</button>
+                    </div>
+                  </div>
+            </div>
+          </div>
+            
+      </div>
+    </div>
+    <div id="menu-kids">
+      <div class="container-fluid mt-5">
+        <div class="row ">
+          <div class="col-sm-12 mt-5">
+              <img src="aaa.jpg" alt="image"width="90px" height="100px" >
+              <img src="o.jpg" alt="image"width="90px" height="100px" >
+              <img src="p.jpg" alt="image"width="90px" height="100px" >
+              <img src="q.jpg" alt="image"width="90px" height="100px" >
+              <img src="t.jpg" alt="image"width="90px" height="100px" >
+              <img src="6.jpg" alt="image"width="90px" height="100px" >
+              <img src="7.jpg" alt="image"width="90px" height="100px" >
+              <img src="8.jpg" alt="image"width="90px" height="100px" >
+              <img src="9.jpg" alt="image"width="90px" height="100px" >
+              <img src="10.jpg" alt="image"width="90px" height="100px">
+              <img src="11.jpg" alt="image"width="90px" height="100px">
+              <img src="12.jpg" alt="image"width="90px" height="100px">
+              <img src="p.jpg" alt="image"width="90px" height="100px">
+              <img src="q.jpg" alt="image"width="90px" height="100px">
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-sm-12 ">
+              <img src="aaa.jpg" alt="image"width="90px" height="100px" >
+              <img src="8.jpg" alt="image"width="90px" height="100px" >
+              <img src="9.jpg" alt="image"width="90px" height="100px" >
+              <img src="6.jpg" alt="image"width="90px" height="100px" >
+              <img src="10.jpg" alt="image"width="90px" height="100px" >
+              <img src="11.jpg" alt="image"width="90px" height="100px" >
+              <img src="12.jpg" alt="image"width="90px" height="100px" >
+              <img src="o.jpg" alt="image"width="90px" height="100px" >
+              <img src="p.jpg" alt="image"width="90px" height="100px" >
+              <img src="q.jpg" alt="image"width="90px" height="100px">
+              <img src="t.jpg" alt="image"width="90px" height="100px">
+              <img src="7.jpg" alt="image"width="90px" height="100px">
+              <img src="8.jpg" alt="image"width="90px" height="100px">
+              <img src="6.jpg" alt="image"width="90px" height="100px">
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-sm-12 ">
+              <img src="12.jpg" alt="image"width="90px" height="100px" >
+              <img src="11.jpg" alt="image"width="90px" height="100px" >
+              <img src="10.jpg" alt="image"width="90px" height="100px" >
+              <img src="9.jpg" alt="image"width="90px" height="100px" >
+              <img src="8.jpg" alt="image"width="90px" height="100px" >
+              <img src="7.jpg" alt="image"width="90px" height="100px" >
+              <img src="6.jpg" alt="image"width="90px" height="100px" >
+              <img src="t.jpg" alt="image"width="90px" height="100px" >
+              <img src="q.jpg" alt="image"width="90px" height="100px" >
+              <img src="p.jpg" alt="image"width="90px" height="100px">
+              <img src="o.jpg" alt="image"width="90px" height="100px">
+              <img src="aaa.jpg" alt="image"width="90px" height="100px">
+              <img src="p.jpg" alt="image"width="90px" height="100px">
+              <img src="q.jpg" alt="image"width="90px" height="100px">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="menu-External">
+      <div class="container mt-5">
+        <div class="row text-center ">
+          <h2 class="text-danger">Some Classes Example</h2>
+          <h6 class="text-black-50">Quisque eu lectus at sem imperdiet aliqua and pendisse a hendsumellus nec turpis sed tellus.</h6>
+        </div>
+        <div class="row mt-2  mt-4">
+          <div class="col-sm-4">
+            <img class="rounded-circle border border-5 border-danger mx-5" src="06.jpg" alt="image" width="150px"height="150px">
+         
+          <ul>
+            <li class="list-unstyled mt-2 ">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+              <small class="text-black-50">Dance classes examples</small>
+             
+            </li>
+            <li class="list-unstyled mt-2">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+             
+            <small class="text-black-50"> Mathematics Everyday</small>
+              
+            </li>
+            <li class="list-unstyled mt-2">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+             
+             <small class="text-black-50">Dance classes examples</small> 
+              
+            </li>
+            <li class="list-unstyled mt-2">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+             
+            <small class="text-black-50">Cooking classes with love</small>
+              
+            </li>
+            <li class="list-unstyled mt-2">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+             
+             <small class="text-black-50">Dance classes examples</small> 
+              
+            </li>
+            <li class="list-unstyled mt-2">
+              
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+              
+             <small class="text-black-50">Yoga Teacher on Friday</small> 
+            
+           </li>
+          </ul>
+        </div>
+       
+
+
+        
+          <div class="col-sm-4">
+            <img class="rounded-circle border border-5 border-danger mx-5" src="06.jpg" alt="image" width="150px"height="150px">
+          
+          <ul>
+            <li class="list-unstyled mt-2 ">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+              <small class="text-black-50">Dance classes examples</small>
+             
+            </li>
+            <li class="list-unstyled mt-2">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+             
+            <small class="text-black-50"> Mathematics Everyday</small>
+              
+            </li>
+            <li class="list-unstyled mt-2">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+             
+             <small class="text-black-50">Dance classes examples</small> 
+              
+            </li>
+            <li class="list-unstyled mt-2">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+             
+            <small class="text-black-50">Cooking classes with love</small>
+              
+            </li>
+            <li class="list-unstyled mt-2">
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+             
+             <small class="text-black-50">Dance classes examples</small> 
+              
+            </li>
+            <li class="list-unstyled mt-2">
+              
+              <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+              </svg>
+              
+             <small class="text-black-50">Yoga Teacher on Friday</small> 
+            
+           </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <img class="rounded-circle border border-5 border-danger mx-5" src="06.jpg" alt="image" width="150px"height="150px">
+        
+        <ul>
+          <li class="list-unstyled mt-2 ">
+            <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+            <small class="text-black-50">Dance classes examples</small>
+           
+          </li>
+          <li class="list-unstyled mt-2">
+            <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+           
+          <small class="text-black-50"> Mathematics Everyday</small>
+            
+          </li>
+          <li class="list-unstyled mt-2">
+            <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+           
+           <small class="text-black-50">Dance classes examples</small> 
+            
+          </li>
+          <li class="list-unstyled mt-2">
+            <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+           
+          <small class="text-black-50">Cooking classes with love</small>
+            
+          </li>
+          <li class="list-unstyled mt-2">
+            <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+           
+           <small class="text-black-50">Dance classes examples</small> 
+            
+          </li>
+          <li class="list-unstyled mt-2">
+            
+            <svg class="text-danger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+            
+           <small class="text-black-50">Yoga Teacher on Friday</small> 
+          
+         </li>
+        </ul>
+      </div>
+
+
+    </div>
+      </div>
+        
+         
+
+    </div>
+    <div class="container-fluid">
+      <div class="row bg-danger">
+        <svg class="text-white mt-5" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg>
+        <h6 class="text-white text-center mt-5 ">@envato</h6>
+        <p class="text-white text-center mt-2">@fooconner @EnvatoMarket @tagDivOfficial Hi @fooconner, Thanks for getting in touch. We're engaging with<br>
+           the author… twitter.com/i/web/status/1…</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-sm-6">
+            <h4 class="text-danger my-4">Stay in touch by email for updates and offers</h4>
+        </div>
+          <div class="col-sm-4">
+            <form>
+                <input type="text" class="form-control mt-4"width="50px" placeholder="Your email here...">
+            </form>
+          </div>
+          <div class="col-sm-2">
+              <button type="button" class="btn bg-danger text-center text-white mt-4">SUBSCRIBE NOW</button>
+           </div> 
+      </div>
+    </div> 
+    <div class="container-fluid">
+      <div class="row bg-primary">
+        <div class="col-md-6 ">
+          <h6 class="text-white my-4 mx-5">© 2014 Coralix Themes. Aenean lacinia bibendum nulla sed consectetur.</h6>
+        </div>
+        <div class="col-md-6 ">
+          <ul class="list-group list-group-horizontal justify-content-end">
+            <li class="list-unstyled">
+              <svg class="text-white border border-white mx-2 mt-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-behance" viewBox="0 0 16 16">
+              <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z"/>
+            </svg>
+          </li> 
+            <li class="list-unstyled">
+              <svg class="text-white border border-white mx-2  mt-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </li>
+            <li class="list-unstyled">
+              <svg class="text-white border border-white mx-2 mt-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+                <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+              </svg>
+            </li>
+            <li class="list-unstyled">
+              <svg class="text-white border border-white mx-2 mt-4"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div> 
+</body>
+</html>

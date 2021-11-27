@@ -1,0 +1,76 @@
+<style>
+    .home-about-video {
+    background-image: url(images/home-about.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 400px;
+    margin-bottom: 45px;
+    box-shadow: 3px 3px 30px 0px rgb(0 0 0 / 30%);
+}
+.align-self-center {
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
+}
+.btn-play {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    background: #43baff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    text-align: center;
+    line-height: 68px;
+    font-size: 19px;
+    color: #fff;
+}
+.btn-play i {
+    margin-left: 7%;
+}
+.video-btn a span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    animation: circle-fade-before 2s infinite ease-in-out;
+    -webkit-animation: circle-fade-before 2s infinite ease-in-out;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-color: #43baff;
+}
+.video-btn a .circle-2 {
+    animation: circle-fade-after 2s infinite ease-in-out;
+    -webkit-animation: circle-fade-after 2s infinite ease-in-out;
+}
+</style>
+
+
+
+<div class="about-right">
+    <div class="img-small">
+        <img class="img-small-1" src="images/home-about-small-1.jpg" alt="">
+        <img class="img-small-2" src="images/home-about-small-2.jpg" alt="">
+    </div>
+    <div class="home-about-video d-flex justify-content-center">
+        <div class="video-btn align-self-center">
+            <a href="https://vimeo.com/94686522" class="btn-play">
+                <i class="fas fa-play"></i>
+                <span class="circle-1"></span>
+                <span class="circle-2"></span>
+            </a>
+        </div>
+    </div>
+    <div class="home-about-btn">
+        <div class="ot-button">
+            <a href="about-us.html" class="btn-details"><i class="flaticon-right-arrow-1"></i> LEANR MORE ABOUT US</a>
+        <div class="space-15"></div>
+        </div>
+    </div>
+</div>

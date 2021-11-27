@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Typewriter</title>
+    </head>
+    <style>
+     *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }   
+     .container{
+         width: 100%;
+         height: 100vh;
+         background-color: blueviolet;
+         float: left;
+     }
+     .container h2{
+         text-align: center;
+         margin-top: 15px;
+     }
+     #button{
+      display: flex;
+      margin: auto;
+      justify-content: center;
+     margin-top: 5%;
+      font-size: 20px;
+      
+     }
+    </style>
+    <body>
+        <div class="container">
+        <h2>TypeWriter Javascript</h2>
+        <button id="button" onclick="typewriter()">Click me</button>
+        <p id="demo"></p>
+        </div>
+    
+    <script>
+        var i=0;
+        var txt= "Hello Arsh";
+        
+       
+        var speed=80;
+
+        function typewriter(){
+            if(i < txt.length){
+                var t=document.getElementById("demo");
+                t.style.fontSize = "xxx-large";
+                t.style.display = "flex";
+                t.style.justifyContent="center";
+                t.style.marginTop="30px";
+                t.innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typewriter,speed);
+            }
+        
+        }
+    </script>
+    </body>
+</html>

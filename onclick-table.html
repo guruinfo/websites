@@ -1,0 +1,146 @@
+<html>
+    <head>
+       <title>Onclick-table</title> 
+    </head>
+    <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* .container{
+            width: 100%;
+            height: 100vh;
+            background-color: blueviolet;
+            position: relative;
+            float: left;
+        }
+        .container2{
+            width: 50%;
+            height: 50vh;
+            background-color: white;
+            box-shadow: 0 0 10px 5px;
+            box-shadow: grey;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        } */
+    </style>
+    <body>
+        <div class="container">
+            <div class="container2">
+                <button onclick="hello()">Click Here</button>
+             
+            </div>
+        </div>
+    </body>
+    <script>
+       
+        function hello(){
+            var t=document.createElement("table");
+            t.setAttribute("border","1");
+
+            var r1=document.createElement("tr");
+
+            var h1=document.createElement("th");
+            var d1= document.createTextNode('Name');
+            h1.appendChild(d1);
+
+            var h2=document.createElement("th");
+            var d2= document.createTextNode('Class');
+            h2.appendChild(d2);
+
+            var h3=document.createElement("th");
+            var d3= document.createTextNode('RollNo');
+            h3.appendChild(d3);
+
+            var h4=document.createElement("th");
+            var d4= document.createTextNode('Subject');
+            h4.appendChild(d4);
+
+            r1.appendChild(h1);
+            r1.appendChild(h2);
+            r1.appendChild(h3);
+            r1.appendChild(h4);
+            t.appendChild(r1);
+            
+            var r2=document.createElement("tr");
+
+            var data1=document.createElement("td");
+            var ar1=document.createTextNode('Raman');
+            data1.appendChild(ar1);
+
+            var data2=document.createElement("td");
+            var ar2=document.createTextNode('12th');
+            data2.appendChild(ar2);
+
+            var data3=document.createElement("td");
+            var ar3=document.createTextNode('1001');
+            data3.appendChild(ar3);
+
+            var data4=document.createElement("td");
+            var ar4=document.createTextNode('English');
+            data4.appendChild(ar4);
+
+            r2.appendChild(data1);
+            r2.appendChild(data2);
+            r2.appendChild(data3);
+            r2.appendChild(data4);
+            t.appendChild(r2);
+
+            var r3=document.createElement("tr");
+
+            var da1=document.createElement("td");
+            var ars1=document.createTextNode("Arsh"); 
+            
+            var da2=document.createElement("td");
+            var ars2=document.createTextNode("12th");
+            
+            var da3=document.createElement("td");
+            var ars3=document.createTextNode("1002");
+          
+            var da4=document.createElement("td");
+            var ars4=document.createTextNode("Computer");
+           
+            t.appendChild(r3);
+            r3.appendChild(da1);
+            da1.appendChild(ars1);
+
+            r3.appendChild(da2);
+            da2.appendChild(ars2);
+          
+            r3.appendChild(da3);
+            da3.appendChild(ars3);
+
+            r3.appendChild(da4);
+            da4.appendChild(ars4)
+           
+            var r4=document.createElement("tr");
+
+            var dat1=document.createElement("td");
+            var rmn1=document.createTextNode("Aman")
+            dat1.appendChild(rmn1);
+
+            var dat2=document.createElement("td");
+            var rmn2=document.createTextNode("12th");
+            dat2.appendChild(rmn2);
+
+            var dat3=document.createElement("td");
+            var rmn3=document.createTextNode("1003");
+            dat3.appendChild(rmn3);
+
+            var dat4=document.createElement("td");
+            var rmn4=document.createTextNode("Maths");
+            dat4.appendChild(rmn4);
+            
+            t.appendChild(r4);
+            r4.appendChild(dat1);
+            r4.appendChild(dat2);
+            r4.appendChild(dat3);
+            r4.appendChild(dat4);
+            
+
+         document.getElementsByTagName("div")[1].appendChild(t);
+        }
+    </script>
+</html>
