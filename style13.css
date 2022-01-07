@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    background-image: url('images/digital-marketing-course.jpg');
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    /* width: 100%; */
+    /* height: 300px; */
+}
+.f{
+    width: 100%;
+    height: auto;
+}
+.c{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 6px solid rgb(214, 209, 209);
+}
+
+@media only screen and (min-width: 576px) {
+    /* For mobile phones: */
+    .image {
+      width: 100%;
+      height: auto;
+    }
+     .image{
+         background-size: 100% 100%; 
+         background-repeat: no-repeat;
+     }
+     .im{
+         width: 100%;
+         height: auto;
+     }
+     .vi iframe{
+         width: 100%;
+         height: auto;
+     }
+     .ff{
+         width: 100%;
+         height: auto;
+         margin-top: 5px;
+     }
+     .bbb{
+        margin-top: 10px;
+      }
+     
+}
+ 
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .image {
+      width: 100%;
+      height: auto;
+    }
+    .image{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .im{
+        width: 100%;
+        height: auto;
+    }
+    .hhh {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      }
+      
+      .vi {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .ff{
+          width: 100%!important;
+          height: 100%!important;
+          margin-top: 5px!important;
+          display: block;
+          position: relative;
+      }
+      .jjj{
+          height: 100%!important;
+      }
+      .bbb{
+        margin-top: 10px;
+      }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .vi iframe{
+        width: 100%;
+        height: auto;
+    }
+    .im{
+        width: 100%;
+        height: auto;
+    }
+    /* .ff{
+        width: 100%;
+        height: 20px;
+        margin-top: 5px;
+    } */
+    .ff{
+        width: 100%!important;
+        height: 100%!important;
+    }
+    .jjj{
+        height: 100%!important;
+    }
+    .bbb{
+        margin-top: 10px;
+        width: 100%;
+      }
+    
+}
+   
+
+@media only screen and (min-width: 768px) {
+    /* For mobile phones: */
+    .vi iframe{
+        width: 100%;
+        height: auto;
+    }
+    .im{
+        width: 100%;
+        height: auto;
+    }
+    .ff{
+        width: 23%!important;
+        background: blueviolet;
+        margin-left: 20px;;
+    }
+    .ff{
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+    }
+    .bbb{
+        margin-top: 10px;
+
+      }
+    
+}
+    
+
+.ff{
+    /* border: 1px solid black; */
+    border-radius: 5%;
+    height: 300px;
+    background-color: white;
+    /* display: flex; */
+    /* justify-content: center; */
+  /* margin-left: 20px;; */
+    /* align-items: center; */
+}
+.ff h2{
+    color: black;
+    display: block;
+    
+}
+h2.q{
+    margin-top: 100px;;
+}
+.kl{
+    margin-left: 600px;
+    animation-name:wheel ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes wheel {
+    from{
+        margin-left: 600px;
+    }
+    to
+    {
+        margin-left: 0px;
+    }
+    
+}
+

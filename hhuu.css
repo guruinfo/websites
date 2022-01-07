@@ -1,0 +1,91 @@
+*{
+	margin: 0px;	
+	padding: 0px;
+	box-sizing: border-box;
+}
+ .h ul li a{
+	padding-left: 20px;
+	color:white;
+	display: inline-block;
+	margin-left:  20px;
+}
+.picter{
+	height: 400px;
+	width: 100%;
+	background-image: url(net777jpg);
+	background-size: 100% 100%;
+
+}
+.g {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+
+}
+.d{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*color:white;*/
+	margin-top: 20px;
+}
+.d h1{
+	font-weight: bold;
+	font-size: 50px;
+}
+.z img{
+	height: 350px;
+}
+   @media only screen and (min-width: 600px){
+        .hhh{
+  width: 100%;height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      }
+      @media only screen and (max-width: 600px){
+            .utube {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  padding-top: 56.25%; 
+  top: 100px; 
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}}
+.l1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+ @media screen and (max-width: 600px) {
+ .j h1 {
+    font-size: 25px;
+
+  }
+  .tu{
+  	margin-left:28%;
+  	margin-top: 100px;
+  	font-size: 50px;
+  	font-weight: bold;
+  }
+   h1.ll{
+  	/*margin-left:28%;*/
+  	font-size: 50px;
+  	font-weight: bold;"
+  }
+}

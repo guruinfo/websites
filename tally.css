@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ .h ul li a{
+	padding-left: 20px;
+	color:white;
+	display: inline-block;
+	margin-left:  20px;
+}
+.pic{
+	height: 450px;
+	width: 100%;
+	background-image: url('images/tally11.jpg');
+	background-size: 100% 100%;
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  
+}
+.tital{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.type{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.type h2{
+	font-size: 45px;
+  font-weight: bold;
+}
+.x{
+	font-size:6rem;
+}
+.tital h1{
+  font-size: 45px;
+  font-weight: bold;
+}
+.j h1{
+	color: white;
+  font-size: 70px;
+  font-weight: bold;
+}
+ @media only screen and (max-width: 600px){
+  .t2  {
+  	height: 100%;
+  	width: 100%;
+    }
+}

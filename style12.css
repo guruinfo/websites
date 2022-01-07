@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    background-image: url('images/microsoft-office-word.jpg');
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+}
+
+@media only screen and (min-width: 576px) {
+    /* For mobile phones: */
+    .image {
+      width: 100%;
+      height: auto;
+    }
+     .image{
+         background-size: 100% 100%; 
+         background-repeat: no-repeat;
+     }
+} 
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .image {
+      width: 100%;
+      height: auto;
+    }
+    .image{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+   .ic{
+       margin-left: 20%;
+       /* display: flex;
+       justify-content: center;
+       align-items: center; */
+   
+   } 
+   svg{
+       margin-left: 40px;;
+   }
+} 
+.f{
+    width: 100%;
+    height: auto;
+}
+.hg svg{
+  
+    margin-left: 20px;;
+}

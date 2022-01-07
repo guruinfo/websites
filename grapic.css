@@ -1,0 +1,118 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ .h ul li a{
+	padding-left: 20px;
+	color:white;
+	display: inline-block;
+	margin-left:  20px;
+}
+.picter{
+	height: 400px;
+	width: 100%;
+	background-size: 100% 100%;
+	background-image: url('images/grpic.jpeg');
+}
+.heading h1{
+	font-weight: bold;
+	font-size: 50px;
+	margin-left: 20px;
+	margin-top: 30px;
+
+}
+.t{
+	font-size: 18px;
+	font-weight: bold;
+	color: grey;
+}
+.g img{
+  height:400px;
+  width:100%;
+}
+.s1 h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 50px;	
+}
+.r img{
+	height: 350px;
+	width: 100%;
+}
+.e1{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+.e2{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    font-weight: bold;
+	font-size: 20px;
+	color: grey;	
+}
+.list li{
+	font-weight: bold;
+	font-size: 17px;
+}
+.g2 img{
+	height: 100%;
+	width: 100%;
+}
+.e3 {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    font-weight: bold;
+	font-size: 50px;
+}
+.t4{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    /*background-color: red;	*/	
+    width: 100%;
+}
+.map{
+	height: 500px;
+	width: 100%;
+	background-color: red;
+
+
+}
+@media screen and (min-width: 600px) {
+	.hg{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.map{
+		width: 80%;
+	}
+	
+.hg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.lq {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  border: none;
+}
+ }
+ 

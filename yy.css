@@ -1,0 +1,14 @@
+*{
+	margin-top: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul li a{
+	/*color: white!important;*/
+}
+.h ul li a{
+	padding-left: 20px;
+	color:white;
+	display: inline-block;
+	margin-left:  20px;
+}

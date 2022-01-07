@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ff {
+    /* width: 100%; */
+    margin-top: 100px!important;
+    /* background-color: green; */
+  }
+.h{
+    
+     font-weight: 800;
+     display: block;
+     /* padding-top: 100px; */
+     font-family:sans-serif;
+     line-height: 1.4;
+}
+.f{
+    width: 100%;
+    height: auto;
+}
+.pp{
+    margin-left: 80px;
+}
+.hh{
+    /* margin-top: 550px!important; */
+    /* padding-top: 50px; */
+     font-weight: 800;
+     font-family:sans-serif;
+     
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-xs-12"] {
+      /* width: 100%; */
+      font-size: 10px;
+    }
+    .ff{
+        margin-top: 100px;;
+    }
+    .hh{
+        margin-top: 10px;
+    }
+    .hh{
+        font-size: 20px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .jj{
+    font-size: 20px;
+    }
+    .m1 {
+      /* width: 100%; */
+      margin-top: 20px!important;
+      font-size: 15px;
+      /* background-color: green; */
+    }
+    .ppp{
+      font-size: 15px;
+    }
+    .bbb{
+      margin-top: 10px;
+    }
+    
+}
+.ci{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+   
+  
+
+  @media only screen and (min-width: 768px) {
+    /* For mobile phones: */
+    .ff {
+      /* width: 100%; */
+      margin-top: 100px!important;
+      /* background-color: green; */
+    }
+    .my{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    .over{
+      width: 100%;
+      height: 250px;
+    }
+    .m1{
+      margin-left: 40px;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    .jj{
+      font-size: 20px;
+    }
+    .im{
+      width: 100%;
+      height: 100%
+    }
+    .sss{
+      font-size: 15px;
+    }
+    .th{
+      font-size: 15px;
+    }
+}
+.ll {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .you {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    border: none;
+  }
+  /* .mm{ */
+    /* display: block; */
+    /* margin: 0 auto; */
+    /* margin-left: 200px; */
+  /* } */
+  .pppp{
+    margin-left: 100px;
+  }
+  .nnnn{
+    margin-left: 30%;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .m1 {
+      /* width: 100%; */
+      margin-top: 20px!important;
+      font-size: 15px;
+      /* background-color: green; */
+    }
+    .jj{
+      font-size: 20px;
+    }
+    .hh{
+      font-size: 15px;
+    }
+    .sss{
+      font-size: 15px;
+    }
+    .th{
+      font-size: 15px;
+    }
+}
+@media only screen and (min-width: 576px) {
+  /* For mobile phones: */
+  .m1 {
+    /* width: 100%; */
+    margin-top: 20px!important;
+    font-size: 15px;
+    /* background-color: green; */
+  }
+  .jj{
+    font-size: 20px;
+  }
+  .hh{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .p{
+    font-size: 15px;
+  }
+  .pp{
+    font-size: 15px;
+  }
+  .image{
+    /* width: 100%; */
+    height: auto;
+  }
+  .sss{
+    font-size: 15px;
+  }
+  .th{
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  /* For mobile phones: */
+   .fff{
+     margin-top: 10px;
+     margin-right: 10px;
+     margin-bottom: 15px;
+   }
+    .ppp{
+      font-size: 15px;
+    } 
+    .hh{
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .p{
+      font-size: 15px;
+    }
+    .pp{
+      font-size: 15px;
+    }
+    .image{
+      /* width: 100%; */
+      height: auto;
+    }
+     .sss{
+       font-size: 15px;
+     }
+    .th{
+      font-size: 15px;
+    }
+}
+@media only screen and (min-width: 992px) {
+  /* For mobile phones: */
+  .m1 {
+    /* width: 100%; */
+    margin-top: 20px!important;
+    margin: 40px;
+    font-size: 15px;
+    /* background-color: green; */
+  }
+  
+    
+}
+
+
+  

@@ -1,0 +1,22 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ .h ul li a{
+	padding-left: 20px;
+	color:white;
+	display: inline-block;
+	margin-left:  20px;
+}
+}
+.col-sm-6 p{
+	color: gray;
+	font-size: 19px;
+	margin-right: 50px;
+}
+.btn {
+	border-radius: 50px;
+	background-color: #ff6666;
+	color: white;
+}
